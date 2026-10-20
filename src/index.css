@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  /* Core Colors — raw HSL components so inline hsl(var(--x) / a) works */
+  --background: 240 20% 5%;
+  --foreground: 0 0% 96%;
+  --card: 240 27% 8%;
+  --card-foreground: 214 32% 91%;
+  --popover: 240 20% 5%;
+  --popover-foreground: 0 0% 96%;
+  --primary: 182 100% 50%;
+  --primary-foreground: 0 0% 34%;
+  --secondary: 212 100% 50%;
+  --muted: 240 28% 14%;
+  --muted-foreground: 215 20% 65%;
+  --accent: 2 100% 50%;
+  --border: 214 32% 17%;
+  --ring: 182 100% 50%;
+}
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-border: hsl(var(--border));
+  --color-ring: hsl(var(--ring));
+
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: "Space Grotesk", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Monaco, "Cascadia Code", "Roboto Mono",
+    Consolas, "Courier New", monospace;
+
+  --radius: 0.5rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: var(--font-sans);
+  }
+
+  :focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
