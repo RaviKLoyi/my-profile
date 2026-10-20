@@ -82,7 +82,7 @@ export function HomePage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.4, delay: 0.7 }}
-            className="mb-3 h-7 font-mono text-lg text-primary md:text-xl"
+            className="mb-3 min-h-7 font-mono text-lg text-primary md:text-xl"
           >
             {typedText}
             <span className="animate-pulse" aria-hidden="true">
