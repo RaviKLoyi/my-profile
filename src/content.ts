@@ -41,7 +41,7 @@ export const home = {
       { id: "np2", word: "Kumar" },
       { id: "np3", word: "Loyi" },
     ] satisfies NamePart[],
-    subtitle: "Full-Stack Developer · Building things for the web",
+    subtitle: "Full-Stack Developer · Building things for the web and mobile",
     intro:
       "I turn ideas into fast, beautiful, and reliable web experiences.",
     ctaPrimary: "View My Work",
@@ -52,8 +52,8 @@ export const home = {
     paragraph:
       "Hey! I'm Ravi — a full-stack developer who genuinely loves the craft. I've spent the last few years building everything from slick user interfaces to robust backend systems. I care deeply about clean code, thoughtful design, and shipping things that actually work. When I'm not coding, I'm probably exploring new frameworks or tinkering with side projects.",
     stats: [
-      { id: "s1", value: "4+", label: "Years Experience" },
-      { id: "s2", value: "30+", label: "Projects Built" },
+      { id: "s1", value: "10+", label: "Years Experience" },
+      { id: "s2", value: "8+", label: "Projects Built" },
       { id: "s3", value: "15+", label: "Technologies" },
     ] satisfies Stat[],
   },
@@ -64,7 +64,7 @@ export const home = {
         id: "g1",
         label: "Frontend",
         items: [
-          { id: "sk1", name: "React" },
+          { id: "sk1", name: "React" }, { id: "sk0", name: "Angular" }, { id: "sk6", name: "Vue" },
           { id: "sk2", name: "TypeScript" },
           { id: "sk3", name: "Next.js" },
           { id: "sk4", name: "Tailwind CSS" },
@@ -100,7 +100,7 @@ export const home = {
     items: [
       {
         id: "p1",
-        name: "DevFlow",
+        name: "Project 1",
         description:
           "A real-time collaborative code editor with live preview and multi-user sessions.",
         tags: ["React", "Node.js", "WebSockets", "MongoDB"],
@@ -109,7 +109,7 @@ export const home = {
       },
       {
         id: "p2",
-        name: "ShopSphere",
+        name: "Project 2",
         description:
           "Full-stack e-commerce platform with inventory management and payment integration.",
         tags: ["Next.js", "PostgreSQL", "Stripe", "TypeScript"],
@@ -118,7 +118,7 @@ export const home = {
       },
       {
         id: "p3",
-        name: "PulseAPI",
+        name: "Project 3",
         description:
           "A lightweight API monitoring dashboard with uptime tracking and alerting.",
         tags: ["Express", "React", "Docker", "AWS"],
@@ -147,7 +147,7 @@ export const home = {
     ] satisfies SocialLink[],
   },
   nav: {
-    wordmark: "ravikloyi.dev",
+    wordmark: "ravikloyi.in",
     links: [
       { label: "About", href: "#about" },
       { label: "Skills", href: "#skills" },
