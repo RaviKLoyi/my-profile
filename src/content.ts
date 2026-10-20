@@ -147,7 +147,7 @@ export const home = {
     ] satisfies SocialLink[],
   },
   nav: {
-    wordmark: "ravi.dev",
+    wordmark: "ravikloyi.dev",
     links: [
       { label: "About", href: "#about" },
       { label: "Skills", href: "#skills" },
